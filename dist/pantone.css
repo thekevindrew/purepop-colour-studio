@@ -1,0 +1,36 @@
+.pantone small {
+  grid-column: 2;
+  min-height: 14px;
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.pantone small.matched { color: #34735d; }
+.pantone small.not-found { color: #a13b3b; }
+
+.page-spec { width: 100%; margin-top: 18px; padding: 15px 16px; border-top: 1px solid #ddd; background: rgba(255,255,255,.72); text-align: left; }
+.page-spec-title { color: #777; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; }
+#page-spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 18px; margin-top: 11px; }
+.page-spec-item { display: grid; grid-template-columns: 20px 1fr; gap: 9px; align-items: start; min-width: 0; }
+.page-spec-swatch { width: 20px; height: 20px; border: 1px solid #0001; }
+.page-spec-item strong,.page-spec-item span { display: block; }
+.page-spec-item strong { color: #222; font-size: 11px; text-transform: uppercase; }
+.page-spec-item div span { color: #666; font-size: 10px; line-height: 1.45; overflow-wrap: anywhere; }
+
+.wordmark span { border-left: 0; padding-left: 0; }
+
+.colourway-logo {
+  display: block;
+  width: 132px;
+  height: auto;
+  margin: 0 0 18px;
+}
+
+.preview { min-height: 825px; }
+#bottle { height: 652px; }
+
+@media (max-width: 800px) {
+  .colourway-logo { width: 112px; margin-bottom: 14px; }
+  .preview { min-height: 650px; }
+  #bottle { height: 511px; }
+}
